@@ -1,0 +1,19 @@
+{
+    "autoload": {
+        "psr-4": {
+            "MonthlyBasis\\SimpleEmailService\\": "src/",
+            "MonthlyBasis\\SimpleEmailServiceTest\\": "test/"
+        }
+    },
+    "license": "MIT",
+    "name": "monthly-basis/simple-email-service",
+    "require": {
+        "aws/aws-php-sns-message-validator": "^1.6",
+        "aws/aws-sdk-php": "^3.183",
+        "laminas/laminas-cli": "^1.1",
+        "laminas/laminas-db": "^2.9",
+        "laminas/laminas-test": "^3.1",
+        "monthly-basis/laminas-test": "^2.0",
+        "php": "^7.4"
+    }
+}
