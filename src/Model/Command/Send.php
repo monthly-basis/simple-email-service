@@ -43,11 +43,10 @@ class Send extends AbstractParamAwareCommand
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $toEmail = $input->getParam('to');
+        $toEmail   = $input->getParam('to');
         $fromEmail = $input->getParam('from');
-        $subject = $input->getParam('subject');
-        $message = $input->getParam('message');
-        var_dump($toEmail, $fromEmail, $subject, $message);
+        $subject   = $input->getParam('subject');
+        $message   = $input->getParam('message');
 
         $this->conditionallySendService->conditionallySend(
             $toEmail,
