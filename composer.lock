@@ -66,16 +66,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.184.4",
+            "version": "3.184.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "34e6b2abfb9d9d2f619c7218fb366371099e26b7"
+                "reference": "0b7187c96ced465d400ad9427157e05ddee68edc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/34e6b2abfb9d9d2f619c7218fb366371099e26b7",
-                "reference": "34e6b2abfb9d9d2f619c7218fb366371099e26b7",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/0b7187c96ced465d400ad9427157e05ddee68edc",
+                "reference": "0b7187c96ced465d400ad9427157e05ddee68edc",
                 "shasum": ""
             },
             "require": {
@@ -150,9 +150,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.184.4"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.184.6"
             },
-            "time": "2021-06-15T18:14:30+00:00"
+            "time": "2021-06-17T18:24:56+00:00"
         },
         {
             "name": "brick/varexporter",
@@ -2045,16 +2045,16 @@
         },
         {
             "name": "monthly-basis/laminas-test",
-            "version": "v2.1.0",
+            "version": "v2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/monthly-basis/laminas-test.git",
-                "reference": "42f4438a6df394f98c30b3a26df00780f5b97f5e"
+                "reference": "18e0b9282ecaaee132daff42248c598f12508274"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/monthly-basis/laminas-test/zipball/42f4438a6df394f98c30b3a26df00780f5b97f5e",
-                "reference": "42f4438a6df394f98c30b3a26df00780f5b97f5e",
+                "url": "https://api.github.com/repos/monthly-basis/laminas-test/zipball/18e0b9282ecaaee132daff42248c598f12508274",
+                "reference": "18e0b9282ecaaee132daff42248c598f12508274",
                 "shasum": ""
             },
             "require": {
@@ -2074,9 +2074,9 @@
             ],
             "support": {
                 "issues": "https://github.com/monthly-basis/laminas-test/issues",
-                "source": "https://github.com/monthly-basis/laminas-test/tree/v2.1.0"
+                "source": "https://github.com/monthly-basis/laminas-test/tree/v2.1.1"
             },
-            "time": "2021-05-05T01:23:56+00:00"
+            "time": "2021-06-19T00:31:02+00:00"
         },
         {
             "name": "mtdowling/jmespath.php",
@@ -4223,16 +4223,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v5.3.0",
+            "version": "v5.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "058553870f7809087fa80fa734704a21b9bcaeb2"
+                "reference": "649730483885ff2ca99ca0560ef0e5f6b03f2ac1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/058553870f7809087fa80fa734704a21b9bcaeb2",
-                "reference": "058553870f7809087fa80fa734704a21b9bcaeb2",
+                "url": "https://api.github.com/repos/symfony/console/zipball/649730483885ff2ca99ca0560ef0e5f6b03f2ac1",
+                "reference": "649730483885ff2ca99ca0560ef0e5f6b03f2ac1",
                 "shasum": ""
             },
             "require": {
@@ -4301,7 +4301,7 @@
                 "terminal"
             ],
             "support": {
-                "source": "https://github.com/symfony/console/tree/v5.3.0"
+                "source": "https://github.com/symfony/console/tree/v5.3.2"
             },
             "funding": [
                 {
@@ -4317,7 +4317,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-26T17:43:10+00:00"
+            "time": "2021-06-12T09:42:48+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -5117,16 +5117,16 @@
         },
         {
             "name": "symfony/string",
-            "version": "v5.3.0",
+            "version": "v5.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "a9a0f8b6aafc5d2d1c116dcccd1573a95153515b"
+                "reference": "0732e97e41c0a590f77e231afc16a327375d50b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/a9a0f8b6aafc5d2d1c116dcccd1573a95153515b",
-                "reference": "a9a0f8b6aafc5d2d1c116dcccd1573a95153515b",
+                "url": "https://api.github.com/repos/symfony/string/zipball/0732e97e41c0a590f77e231afc16a327375d50b0",
+                "reference": "0732e97e41c0a590f77e231afc16a327375d50b0",
                 "shasum": ""
             },
             "require": {
@@ -5180,7 +5180,7 @@
                 "utf8"
             ],
             "support": {
-                "source": "https://github.com/symfony/string/tree/v5.3.0"
+                "source": "https://github.com/symfony/string/tree/v5.3.2"
             },
             "funding": [
                 {
@@ -5196,7 +5196,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-26T17:43:10+00:00"
+            "time": "2021-06-06T09:51:56+00:00"
         },
         {
             "name": "theseer/tokenizer",
