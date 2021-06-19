@@ -61,6 +61,11 @@ class Module
                         $sm->get(SimpleEmailServiceTable\BounceLog::class),
                     );
                 },
+                SimpleEmailServiceService\SimpleNotificationService\Complaint\SaveToMySql::class => function ($sm) {
+                    return new SimpleEmailServiceService\SimpleNotificationService\Complaint\SaveToMySql(
+                        $sm->get(SimpleEmailServiceTable\ComplaintLog::class),
+                    );
+                },
                 SimpleEmailServiceTable\BounceLog::class => function ($sm) {
                     return new SimpleEmailServiceTable\BounceLog(
                         $sm->get('simple-email-service')
