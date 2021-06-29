@@ -1,8 +1,8 @@
 <?php
 namespace MonthlyBasis\SimpleEmailService\Model\Service;
 
-use Aws\Ses\SesClient;
 use Aws\Exception\AwsException;
+use Aws\Ses\SesClient;
 
 class Send
 {
