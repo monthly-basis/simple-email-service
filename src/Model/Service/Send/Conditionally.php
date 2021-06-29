@@ -49,8 +49,9 @@ class Conditionally
             return false;
         }
 
+        $this->sendLogTable->insert($toEmail);
+
         try {
-            $this->sendLogTable->insert($toEmail);
             $this->sendService->send(
                 $toEmail,
                 $fromEmail,
