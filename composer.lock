@@ -66,16 +66,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.184.7",
+            "version": "3.185.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "d5d5fe5fdfca6c7a56f2f8364d09c3100d5c2149"
+                "reference": "e7a7d6b28b477a02a5625348995949c2dee7919a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/d5d5fe5fdfca6c7a56f2f8364d09c3100d5c2149",
-                "reference": "d5d5fe5fdfca6c7a56f2f8364d09c3100d5c2149",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/e7a7d6b28b477a02a5625348995949c2dee7919a",
+                "reference": "e7a7d6b28b477a02a5625348995949c2dee7919a",
                 "shasum": ""
             },
             "require": {
@@ -150,9 +150,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.184.7"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.185.3"
             },
-            "time": "2021-06-21T18:37:16+00:00"
+            "time": "2021-06-28T18:15:17+00:00"
         },
         {
             "name": "brick/varexporter",
@@ -962,16 +962,16 @@
         },
         {
             "name": "laminas/laminas-escaper",
-            "version": "2.7.0",
+            "version": "2.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-escaper.git",
-                "reference": "5e04bc5ae5990b17159d79d331055e2c645e5cc5"
+                "reference": "2d6dce99668b413610e9544183fa10392437f542"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-escaper/zipball/5e04bc5ae5990b17159d79d331055e2c645e5cc5",
-                "reference": "5e04bc5ae5990b17159d79d331055e2c645e5cc5",
+                "url": "https://api.github.com/repos/laminas/laminas-escaper/zipball/2d6dce99668b413610e9544183fa10392437f542",
+                "reference": "2d6dce99668b413610e9544183fa10392437f542",
                 "shasum": ""
             },
             "require": {
@@ -982,7 +982,7 @@
                 "zendframework/zend-escaper": "^2.6.1"
             },
             "require-dev": {
-                "laminas/laminas-coding-standard": "~1.0.0",
+                "laminas/laminas-coding-standard": "~2.3.0",
                 "phpunit/phpunit": "^9.3",
                 "psalm/plugin-phpunit": "^0.12.2",
                 "vimeo/psalm": "^3.16"
@@ -1021,7 +1021,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2020-11-17T21:26:43+00:00"
+            "time": "2021-06-26T14:26:08+00:00"
         },
         {
             "name": "laminas/laminas-eventmanager",
@@ -1590,16 +1590,16 @@
         },
         {
             "name": "laminas/laminas-stdlib",
-            "version": "3.3.1",
+            "version": "3.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-stdlib.git",
-                "reference": "d81c7ffe602ed0e6ecb18691019111c0f4bf1efe"
+                "reference": "e89c2268c9cad25099f562f7f015c28c5dd383c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-stdlib/zipball/d81c7ffe602ed0e6ecb18691019111c0f4bf1efe",
-                "reference": "d81c7ffe602ed0e6ecb18691019111c0f4bf1efe",
+                "url": "https://api.github.com/repos/laminas/laminas-stdlib/zipball/e89c2268c9cad25099f562f7f015c28c5dd383c9",
+                "reference": "e89c2268c9cad25099f562f7f015c28c5dd383c9",
                 "shasum": ""
             },
             "require": {
@@ -1610,9 +1610,11 @@
                 "zendframework/zend-stdlib": "^3.2.1"
             },
             "require-dev": {
-                "laminas/laminas-coding-standard": "~1.0.0",
+                "laminas/laminas-coding-standard": "~2.3.0",
                 "phpbench/phpbench": "^0.17.1",
-                "phpunit/phpunit": "~9.3.7"
+                "phpunit/phpunit": "~9.3.7",
+                "psalm/plugin-phpunit": "^0.16.0",
+                "vimeo/psalm": "^4.7"
             },
             "type": "library",
             "autoload": {
@@ -1644,7 +1646,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2020-11-19T20:18:59+00:00"
+            "time": "2021-06-28T21:37:31+00:00"
         },
         {
             "name": "laminas/laminas-test",
@@ -1983,16 +1985,16 @@
         },
         {
             "name": "laminas/laminas-zendframework-bridge",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-zendframework-bridge.git",
-                "reference": "6cccbddfcfc742eb02158d6137ca5687d92cee32"
+                "reference": "13af2502d9bb6f7d33be2de4b51fb68c6cdb476e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-zendframework-bridge/zipball/6cccbddfcfc742eb02158d6137ca5687d92cee32",
-                "reference": "6cccbddfcfc742eb02158d6137ca5687d92cee32",
+                "url": "https://api.github.com/repos/laminas/laminas-zendframework-bridge/zipball/13af2502d9bb6f7d33be2de4b51fb68c6cdb476e",
+                "reference": "13af2502d9bb6f7d33be2de4b51fb68c6cdb476e",
                 "shasum": ""
             },
             "require": {
@@ -2041,7 +2043,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2021-02-25T21:54:58+00:00"
+            "time": "2021-06-24T12:49:22+00:00"
         },
         {
             "name": "monthly-basis/laminas-test",
