@@ -1,8 +1,8 @@
 <?php
 namespace MonthlyBasis\SimpleEmailService\Model\Service\Send;
 
-use Aws\Ses\SesClient;
 use Aws\Exception\AwsException;
+use Aws\Ses\SesClient;
 use DateTime;
 use MonthlyBasis\SimpleEmailService\Model\Service as SimpleEmailServiceService;
 use MonthlyBasis\SimpleEmailService\Model\Table as SimpleEmailServiceTable;
