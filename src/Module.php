@@ -107,7 +107,7 @@ class Module
             ],
             'view_manager' => [
                 'template_path_stack' => [
-                    'monthly-basis/simple-email-service' => __DIR__ . '/../../view',
+                    'monthly-basis/simple-email-service' => __DIR__ . '/../view',
                 ],
             ],
         ];
