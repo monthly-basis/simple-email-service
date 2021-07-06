@@ -5,6 +5,7 @@ use Laminas\Router\Http\Literal;
 use Laminas\Router\Http\Segment;
 use MonthlyBasis\SimpleEmailService\Controller as SimpleEmailServiceController;
 use MonthlyBasis\SimpleEmailService\Model\Command as SimpleEmailServiceCommand;
+use MonthlyBasis\SimpleEmailService\Model\Entity as SimpleEmailServiceEntity;
 use MonthlyBasis\SimpleEmailService\Model\Service as SimpleEmailServiceService;
 use MonthlyBasis\SimpleEmailService\Model\Table as SimpleEmailServiceTable;
 use MonthlyBasis\SimpleEmailService\View\Helper as SimpleEmailServiceHelper;
@@ -134,6 +135,11 @@ class Module
                  */
                 \Aws\Sns\MessageValidator::class => function ($sm) {
                     return new \Aws\Sns\MessageValidator();
+                },
+                SimpleEmailServiceEntity\Config::class => function ($sm) {
+                    return new SimpleEmailServiceEntity\Config(
+                        $sm->get('Config')['monthly-basis']['simple-email-service'] ?? []
+                    );
                 },
                 SimpleEmailServiceService\Send::class => function ($sm) {
                     return new SimpleEmailServiceService\Send(
