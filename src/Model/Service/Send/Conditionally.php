@@ -6,6 +6,7 @@ use Aws\Ses\SesClient;
 use DateTime;
 use MonthlyBasis\SimpleEmailService\Model\Service as SimpleEmailServiceService;
 use MonthlyBasis\SimpleEmailService\Model\Table as SimpleEmailServiceTable;
+use MonthlyBasis\StopForumSpam\Service as StopForumSpamService;
 
 class Conditionally
 {
@@ -13,12 +14,14 @@ class Conditionally
         SimpleEmailServiceService\Send $sendService,
         SimpleEmailServiceTable\BounceLog $bounceLogTable,
         SimpleEmailServiceTable\ComplaintLog $complaintLogTable,
-        SimpleEmailServiceTable\SendLog $sendLogTable
+        SimpleEmailServiceTable\SendLog $sendLogTable,
+        StopForumSpamService\IpAddress\Toxic $toxicService
     ) {
         $this->sendService       = $sendService;
         $this->bounceLogTable    = $bounceLogTable;
         $this->complaintLogTable = $complaintLogTable;
         $this->sendLogTable      = $sendLogTable;
+        $this->toxicService      = $toxicService;
     }
 
     public function conditionallySend(
@@ -27,6 +30,12 @@ class Conditionally
         string $subject,
         string $messageText
     ): bool {
+        if (!empty($_SERVER['REMOTE_ADDR'])
+            && $this->toxicService->isIpAddressToxic($_SERVER['REMOTE_ADDR'])
+        ) {
+            return false;
+        }
+
         $result = $this->bounceLogTable->selectWhereEmailAddressLimit1(
             $toEmail
         );

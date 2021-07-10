@@ -9,6 +9,7 @@ use MonthlyBasis\SimpleEmailService\Model\Entity as SimpleEmailServiceEntity;
 use MonthlyBasis\SimpleEmailService\Model\Service as SimpleEmailServiceService;
 use MonthlyBasis\SimpleEmailService\Model\Table as SimpleEmailServiceTable;
 use MonthlyBasis\SimpleEmailService\View\Helper as SimpleEmailServiceHelper;
+use MonthlyBasis\StopForumSpam\Service as StopForumSpamService;
 
 class Module
 {
@@ -151,7 +152,8 @@ class Module
                         $sm->get(SimpleEmailServiceService\Send::class),
                         $sm->get(SimpleEmailServiceTable\BounceLog::class),
                         $sm->get(SimpleEmailServiceTable\ComplaintLog::class),
-                        $sm->get(SimpleEmailServiceTable\SendLog::class)
+                        $sm->get(SimpleEmailServiceTable\SendLog::class),
+                        $sm->get(StopForumSpamService\IpAddress\Toxic::class),
                     );
                 },
                 SimpleEmailServiceService\SimpleNotificationService\Bounce\SaveToMySql::class => function ($sm) {

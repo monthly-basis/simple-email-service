@@ -5,6 +5,7 @@ return [
         'Laminas\Db',
         'Laminas\Router',
         'MonthlyBasis\SimpleEmailService',
+        'MonthlyBasis\StopForumSpam',
         'MonthlyBasis\Website',
     ],
     // These are various options for the listeners attached to the ModuleManager

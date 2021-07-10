@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fe006ee879ba14d2a781b5e6a347f02c",
+    "content-hash": "f604f765d5a54039b9ba8a8f2d55bfa8",
     "packages": [
         {
             "name": "aws/aws-php-sns-message-validator",
@@ -66,16 +66,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.185.6",
+            "version": "3.185.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "35310302912fdc3b4a0e829b84424c41e3fd9727"
+                "reference": "667a83e4a18cb75db3ce74162efc97123da96261"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/35310302912fdc3b4a0e829b84424c41e3fd9727",
-                "reference": "35310302912fdc3b4a0e829b84424c41e3fd9727",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/667a83e4a18cb75db3ce74162efc97123da96261",
+                "reference": "667a83e4a18cb75db3ce74162efc97123da96261",
                 "shasum": ""
             },
             "require": {
@@ -150,9 +150,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.185.6"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.185.10"
             },
-            "time": "2021-07-02T18:13:18+00:00"
+            "time": "2021-07-09T19:21:22+00:00"
         },
         {
             "name": "brick/varexporter",
@@ -2047,16 +2047,16 @@
         },
         {
             "name": "monthly-basis/laminas-test",
-            "version": "v2.1.1",
+            "version": "v2.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/monthly-basis/laminas-test.git",
-                "reference": "18e0b9282ecaaee132daff42248c598f12508274"
+                "reference": "ed841efab5f25df4c00d0778e5a30e9fcdc9cf8f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/monthly-basis/laminas-test/zipball/18e0b9282ecaaee132daff42248c598f12508274",
-                "reference": "18e0b9282ecaaee132daff42248c598f12508274",
+                "url": "https://api.github.com/repos/monthly-basis/laminas-test/zipball/ed841efab5f25df4c00d0778e5a30e9fcdc9cf8f",
+                "reference": "ed841efab5f25df4c00d0778e5a30e9fcdc9cf8f",
                 "shasum": ""
             },
             "require": {
@@ -2076,9 +2076,45 @@
             ],
             "support": {
                 "issues": "https://github.com/monthly-basis/laminas-test/issues",
-                "source": "https://github.com/monthly-basis/laminas-test/tree/v2.1.1"
+                "source": "https://github.com/monthly-basis/laminas-test/tree/v2.1.2"
             },
-            "time": "2021-06-19T00:31:02+00:00"
+            "time": "2021-07-05T08:03:42+00:00"
+        },
+        {
+            "name": "monthly-basis/stop-forum-spam",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/monthly-basis/stop-forum-spam.git",
+                "reference": "e5be8852b7b67c5f6e5054a8cce13066d4dd6beb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/monthly-basis/stop-forum-spam/zipball/e5be8852b7b67c5f6e5054a8cce13066d4dd6beb",
+                "reference": "e5be8852b7b67c5f6e5054a8cce13066d4dd6beb",
+                "shasum": ""
+            },
+            "require": {
+                "laminas/laminas-db": "^2.9",
+                "laminas/laminas-test": "^3.1",
+                "monthly-basis/laminas-test": "^2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MonthlyBasis\\StopForumSpam\\": "src/",
+                    "MonthlyBasis\\StopForumSpamTest\\": "test/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "support": {
+                "issues": "https://github.com/monthly-basis/stop-forum-spam/issues",
+                "source": "https://github.com/monthly-basis/stop-forum-spam/tree/v1.0.1"
+            },
+            "time": "2021-07-10T02:02:26+00:00"
         },
         {
             "name": "monthly-basis/website",
