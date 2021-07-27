@@ -1,5 +1,5 @@
 <?php
-namespace MonthlyBasis\SimpleEmailTest\Model\Entity\Config;
+namespace MonthlyBasis\SimpleEmailTest\Model\Entity;
 
 use MonthlyBasis\SimpleEmailService\Model\Entity as SimpleEmailServiceEntity;
 use PHPUnit\Framework\TestCase;
