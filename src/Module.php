@@ -120,10 +120,11 @@ class Module
         return [
             'factories' => [
                 \Aws\Ses\SesClient::class => function ($sm) {
+                    $configEntity = $sm->get(SimpleEmailServiceEntity\Config::class);
                     $credentials = $sm->get('Config')['aws']['credentials'];
                     return new \Aws\Ses\SesClient([
                         'version' => '2010-12-01',
-                        'region'  => 'us-east-2',
+                        'region'  => $configEntity['region'],
                         'credentials' => [
                             'key' => $credentials['key'],
                             'secret' => $credentials['secret'],
@@ -137,6 +138,11 @@ class Module
                 \Aws\Sns\MessageValidator::class => function ($sm) {
                     return new \Aws\Sns\MessageValidator();
                 },
+                /*
+                 * @TODO Config entity should be built using a factory such as
+                 * MonthlyBasis\SimpleNotificationService\Factory\Config
+                 * The factory can ensure that required key-value pairs exist.
+                 */
                 SimpleEmailServiceEntity\Config::class => function ($sm) {
                     return new SimpleEmailServiceEntity\Config(
                         $sm->get('Config')['monthly-basis']['simple-email-service'] ?? []
