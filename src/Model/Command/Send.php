@@ -48,12 +48,18 @@ class Send extends AbstractParamAwareCommand
         $subject   = $input->getParam('subject');
         $message   = $input->getParam('message');
 
-        $this->conditionallySendService->conditionallySend(
+        $bool = $this->conditionallySendService->conditionallySend(
             $toEmail,
             $fromEmail,
             $subject,
             $message,
         );
+
+        if ($bool) {
+            echo "SUCCESS: Email sent!\n";
+        } else {
+            echo "FAIL: Email did not send.\n";
+        }
 
         return Command::SUCCESS;
     }
