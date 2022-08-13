@@ -73,7 +73,7 @@ class BounceLogTest extends TableTestCase
             $dateTimeOneDayAgo
         );
         $this->assertSame(
-            '0',
+            0,
             $result->current()['COUNT(*)']
         );
 
@@ -84,7 +84,7 @@ class BounceLogTest extends TableTestCase
             $dateTimeOneDayAgo
         );
         $this->assertSame(
-            '2',
+            2,
             $result->current()['COUNT(*)']
         );
 
@@ -94,7 +94,7 @@ class BounceLogTest extends TableTestCase
             $dateTimeThreeDaysAgo
         );
         $this->assertSame(
-            '3',
+            3,
             $result->current()['COUNT(*)']
         );
     }
